@@ -593,5 +593,98 @@ footer strong{color:var(--bone);font-family:var(--disp);font-weight:800;font-siz
 </footer>
 
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "EducationalOrganization"],
+      "@id": "https://canadianfirearmstraining.com/#org",
+      "name": "Canadian Firearms Training",
+      "description": "RCMP-approved Canadian Firearms Safety Course (PAL) and Restricted course (RPAL) taught in Victoria, BC by Murray Kilshaw.",
+      "url": "https://canadianfirearmstraining.com/",
+      "telephone": "+1-250-634-0864",
+      "email": "safetguns@shaw.ca",
+      "areaServed": "Victoria, British Columbia",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1681A Island Highway",
+        "addressLocality": "Victoria",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+      },
+      "employee": {
+        "@type": "Person",
+        "@id": "https://canadianfirearmstraining.com/#murray",
+        "name": "Murray Kilshaw",
+        "jobTitle": "Firearms Safety Instructor and CORE Examiner",
+        "telephone": "+1-250-634-0864"
+      }
+    },
+    {
+      "@type": "Course",
+      "name": "Canadian Firearms Safety Course (CFSC)",
+      "description": "Full-day non-restricted firearms safety course covering rifles and shotguns, with the written and practical tests included. Leads to the non-restricted PAL.",
+      "provider": {"@id": "https://canadianfirearmstraining.com/#org"},
+      "url": "https://canadianfirearmstraining.com/#weekend",
+      "offers": {
+        "@type": "Offer",
+        "price": "175",
+        "priceCurrency": "CAD",
+        "category": "Paid",
+        "availability": "https://schema.org/InStock"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "Onsite",
+        "courseWorkload": "PT8H",
+        "instructor": {"@id": "https://canadianfirearmstraining.com/#murray"},
+        "location": {
+          "@type": "Place",
+          "name": "Island Outfitters",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1681A Island Highway",
+            "addressLocality": "Victoria",
+            "addressRegion": "BC",
+            "addressCountry": "CA"
+          }
+        }
+      }
+    },
+    {
+      "@type": "Course",
+      "name": "Canadian Restricted Firearms Safety Course (CRFSC)",
+      "description": "Full-day restricted firearms safety course covering handguns, with the written and practical tests included. Leads to the restricted PAL. Requires the non-restricted PAL first.",
+      "provider": {"@id": "https://canadianfirearmstraining.com/#org"},
+      "url": "https://canadianfirearmstraining.com/#weekend",
+      "offers": {
+        "@type": "Offer",
+        "price": "100",
+        "priceCurrency": "CAD",
+        "category": "Paid",
+        "availability": "https://schema.org/InStock"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "Onsite",
+        "courseWorkload": "PT7H",
+        "instructor": {"@id": "https://canadianfirearmstraining.com/#murray"},
+        "location": {
+          "@type": "Place",
+          "name": "Island Outfitters",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1681A Island Highway",
+            "addressLocality": "Victoria",
+            "addressRegion": "BC",
+            "addressCountry": "CA"
+          }
+        }
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>
