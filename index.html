@@ -204,6 +204,11 @@ input:focus,textarea:focus{border-color:var(--brass)}
 textarea{min-height:7.5rem;resize:vertical}
 form .btn{border:none;cursor:pointer;justify-self:start}
 .formnote{font-size:.92rem;color:#8C8271;margin:0}
+.mailto{border:2px solid #3A342A;padding:clamp(1.25rem,3vw,2rem)}
+.mailto h3{font-size:clamp(1.35rem,2.6vw,1.75rem);color:var(--brass)}
+.mailto p{color:#B6AB97;margin:.7rem 0 0;max-width:38ch}
+.mailto-btns{display:flex;flex-wrap:wrap;gap:.75rem;margin:1.4rem 0 1.25rem}
+.mailto .formnote{margin:0}
 
 /* ---------- footer ---------- */
 footer{background:#0D0B09;color:#867C6C;padding-block:2.25rem;font-size:.92rem;border-top:3px solid var(--brass-dk)}
@@ -563,26 +568,15 @@ footer strong{color:var(--bone);font-family:var(--disp);font-weight:800;font-siz
         <dd>Island Outfitters<br>1681A Island Highway, Victoria BC</dd>
       </dl>
 
-      <form action="https://formspree.io/f/xkjnzgnl" method="POST">
-        <div>
-          <label for="name">Your name</label>
-          <input id="name" name="name" type="text" autocomplete="name" required>
+      <div class="mailto">
+        <h3>Send a message</h3>
+        <p>Email goes straight to Murray. If a reply is needed you will hear back within 48 to 72 hours.</p>
+        <div class="mailto-btns">
+          <a class="btn" href="mailto:safetguns@shaw.ca?subject=Course%20enquiry">Email about courses</a>
+          <a class="btn ghost" href="mailto:coreexaminer@shaw.ca?subject=CORE%20examination">Email about CORE</a>
         </div>
-        <div>
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" autocomplete="email" required>
-        </div>
-        <div>
-          <label for="subject">Subject</label>
-          <input id="subject" name="subject" type="text" required>
-        </div>
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button class="btn" type="submit">Send message</button>
-        <p class="formnote">To register for a class, come to the gunroom in person — messages do not hold a seat.</p>
-      </form>
+        <p class="formnote">To register for a class, come to the gunroom in person &mdash; messages do not hold a seat.</p>
+      </div>
     </div>
   </div>
 </section>
